@@ -1,0 +1,291 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting up Roboto font for all elements */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.app-logo {
+  width: 300px;
+}
+/* Global styling for app container */
+.app-container {
+  background: #9ba9eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Responsive container */
+.responsive-container {
+  width: 85%;
+}
+
+@media screen and (min-width: 768px) {
+  .responsive-container {
+    width: 70%;
+  }
+}
+
+/* App header */
+.app-header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Card container */
+.card-container {
+  background: #5763a5;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 20px; /* Added padding */
+}
+
+/* Manager image */
+.manager-image {
+  width: 300px;
+  order: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .manager-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .manager-image {
+    order: 2;
+  }
+}
+
+/* Individual card style */
+.card {
+  background: #454f84;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+/* Form heading */
+.form-heading {
+  color: #f8fafc;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+/* Responsive card */
+.card-responsive {
+  width: 88%;
+  margin: 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .card-responsive {
+    width: 75%;
+  }
+}
+
+/* Input container */
+.input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  background: #f8fafc;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+/* Input field */
+.input {
+  width: 100%;
+  background: none;
+  outline: none;
+  border: 0;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .input {
+    font-size: 16px;
+  }
+}
+
+/* Icon container */
+.icon-container {
+  border-right: 1px solid #c3caea;
+  width: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-icon {
+  height: 20px;
+  width: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .input-icon {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+/* Button container */
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Add button */
+.add-btn {
+  border: none;
+  outline: none;
+  background: #0b69ff;
+  padding: 8px 28px;
+  color: #f8fafc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Passwords header */
+.passwords-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Horizontal line */
+.hr-line {
+  margin-top: 20px;
+  width: 100%;
+  background: #f8fafc;
+}
+
+/* Passwords header title */
+.passwords-header-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f8fafc;
+}
+
+/* Search container */
+.search-container {
+  height: 25px;
+  background: #f8fafc;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 100%;
+  border-right: 2px solid #c3caea;
+}
+
+.search-icon {
+  height: 18px;
+  width: 18px;
+}
+
+.search-input {
+  height: 100%;
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+/* Checkbox container */
+.checkbox-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #f8fafc;
+}
+
+.checkbox-input {
+  width: 16px;
+  height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .checkbox-input {
+    width: 20px;
+    height: 20px;
+  }
+  .checkbox-label {
+    font-size: 16px;
+  }
+}
+
+/* No passwords image */
+.no-passwords-image {
+  width: 280px;
+}
+
+.no-passwords-title {
+  font-size: 18px;
+  text-align: center;
+  color: #f8fafc;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .no-password-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* Results count */
+.results-count {
+  font-size: 10px;
+  padding: 2px 12px;
+  border: 1px solid #c3caea;
+  border-radius: 10px;
+  display: inline-block;
+  margin-left: 2px;
+  margin-right: 10px;
+}
+
+/* Passwords list container */
+.passwords-list-container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
